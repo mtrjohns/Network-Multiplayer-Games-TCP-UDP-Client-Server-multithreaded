@@ -1,0 +1,36 @@
+﻿  InMemoryStream.cpp
+  main.cpp
+  Message.cpp
+  OutMemoryStream.cpp
+  Socket.cpp
+  TCPClient.cpp
+  UDP.cpp
+  User.cpp
+f:\google drive\uni\y3\nmg\tcpclient - network mp games - mjohns - p147264\tcpclient - network mp games - mjohns - p147264\user.cpp(19): warning C4477: 'sprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+f:\google drive\uni\y3\nmg\tcpclient - network mp games - mjohns - p147264\tcpclient - network mp games - mjohns - p147264\user.cpp(19): warning C4313: 'sprintf': '%s' in format string conflicts with argument 1 of type 'int'
+  Generating Code...
+InMemoryStream.obj : error LNK2019: unresolved external symbol __imp_ntohl referenced in function "public: void __cdecl InMemoryStream::UnPack(int &)" (?UnPack@InMemoryStream@@QEAAXAEAH@Z)
+InMemoryStream.obj : error LNK2019: unresolved external symbol __imp_ntohs referenced in function "public: void __cdecl InMemoryStream::UnPack(unsigned short &)" (?UnPack@InMemoryStream@@QEAAXAEAG@Z)
+OutMemoryStream.obj : error LNK2019: unresolved external symbol __imp_htonl referenced in function "public: void __cdecl OutMemoryStream::Pack(int)" (?Pack@OutMemoryStream@@QEAAXH@Z)
+OutMemoryStream.obj : error LNK2019: unresolved external symbol __imp_htons referenced in function "public: void __cdecl OutMemoryStream::Pack(unsigned short)" (?Pack@OutMemoryStream@@QEAAXG@Z)
+Socket.obj : error LNK2019: unresolved external symbol __imp_bind referenced in function "public: void __cdecl Socket::BindSocket(void)" (?BindSocket@Socket@@QEAAXXZ)
+Socket.obj : error LNK2019: unresolved external symbol __imp_closesocket referenced in function "public: void __cdecl Socket::CloseSocket(void)" (?CloseSocket@Socket@@QEAAXXZ)
+Socket.obj : error LNK2019: unresolved external symbol __imp_connect referenced in function "public: void __cdecl Socket::Connect(void)" (?Connect@Socket@@QEAAXXZ)
+TCPClient.obj : error LNK2001: unresolved external symbol __imp_connect
+Socket.obj : error LNK2019: unresolved external symbol __imp_setsockopt referenced in function "public: void __cdecl Socket::SetSocketOptions(void)" (?SetSocketOptions@Socket@@QEAAXXZ)
+Socket.obj : error LNK2019: unresolved external symbol __imp_shutdown referenced in function "public: void __cdecl Socket::ShutdownSocket(void)" (?ShutdownSocket@Socket@@QEAAXXZ)
+Socket.obj : error LNK2019: unresolved external symbol __imp_socket referenced in function "public: int __cdecl Socket::InitialiseSocket(void)" (?InitialiseSocket@Socket@@QEAAHXZ)
+Socket.obj : error LNK2019: unresolved external symbol __imp_WSACleanup referenced in function "private: void __cdecl Socket::PrintError(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?PrintError@Socket@@AEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+TCPClient.obj : error LNK2001: unresolved external symbol __imp_WSACleanup
+UDP.obj : error LNK2001: unresolved external symbol __imp_WSACleanup
+Socket.obj : error LNK2019: unresolved external symbol __imp_WSAGetLastError referenced in function "private: void __cdecl Socket::PrintError(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?PrintError@Socket@@AEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+TCPClient.obj : error LNK2001: unresolved external symbol __imp_WSAGetLastError
+UDP.obj : error LNK2001: unresolved external symbol __imp_WSAGetLastError
+Socket.obj : error LNK2019: unresolved external symbol __imp_getaddrinfo referenced in function "public: int __cdecl Socket::ResolveAddress(char const *)" (?ResolveAddress@Socket@@QEAAHPEBD@Z)
+Socket.obj : error LNK2019: unresolved external symbol __imp_freeaddrinfo referenced in function "public: void __cdecl Socket::FreeAddressInfo(void)" (?FreeAddressInfo@Socket@@QEAAXXZ)
+TCPClient.obj : error LNK2019: unresolved external symbol __imp_send referenced in function "public: void __cdecl TCPClient::SendStream(class OutMemoryStream)" (?SendStream@TCPClient@@QEAAXVOutMemoryStream@@@Z)
+TCPClient.obj : error LNK2019: unresolved external symbol __imp_WSAStartup referenced in function "public: void __cdecl TCPClient::InitClient(void)" (?InitClient@TCPClient@@QEAAXXZ)
+UDP.obj : error LNK2001: unresolved external symbol __imp_WSAStartup
+UDP.obj : error LNK2019: unresolved external symbol __imp_recvfrom referenced in function "public: int __cdecl UDP::Recv(void)" (?Recv@UDP@@QEAAHXZ)
+UDP.obj : error LNK2019: unresolved external symbol __imp_sendto referenced in function "public: int __cdecl UDP::Send(void)" (?Send@UDP@@QEAAHXZ)
+F:\Google Drive\Uni\Y3\NMG\TCPClient - Network MP Games - MJohns - P147264\x64\Debug\TCPClient - Network MP Games - MJohns - P147264.exe : fatal error LNK1120: 18 unresolved externals
